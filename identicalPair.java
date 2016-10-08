@@ -17,7 +17,7 @@ class identicalPairs{
         T lastKey = items.get(0);
         int lastKeyCount = 0;
         for(int i=0;i<items.size();i++){
-            if (lastKey != items.get(i)){
+            if (lastKey.compareTo(items.get(i)) != 0){
                 count += (lastKeyCount * (lastKeyCount-1))/2;
                 lastKey = items.get(i);
                 lastKeyCount = 0;
